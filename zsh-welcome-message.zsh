@@ -23,7 +23,7 @@ zsh_welcome_banner_message() {
   if _zsh_welcome_banner_should_display; then
     # Execute the welcome message command if it is set.
     if [[ -n "$ZSH_WELCOME_MESSAGE_COMMAND" ]]; then
-      zsh -c "$ZSH_WELCOME_MESSAGE_COMMAND"
+      zsh -c "$ZSH_WELCOME_MESSAGE_COMMAND" || true
     fi
     ZSH_WELCOME_MESSAGE_SHOWN=true  # Set the flag to true to avoid repeated displays.
   fi
