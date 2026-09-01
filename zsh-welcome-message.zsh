@@ -1,6 +1,6 @@
 typeset -g ZSH_WELCOME_MESSAGE_SHOWN=false
 ZSH_WELCOME_MESSAGE_ENABLED=${ZSH_WELCOME_MESSAGE_ENABLED:-true}
-ZSH_WELCOME_MESSAGE_COMMAND="echo 'Welcome!\n'"
+ZSH_WELCOME_MESSAGE_COMMAND="${ZSH_WELCOME_MESSAGE_COMMAND:-}"
 
 _zsh_welcome_banner_disabled() {
   [ -e "$HOME/.hushlogin" ]
